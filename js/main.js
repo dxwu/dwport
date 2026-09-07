@@ -200,23 +200,36 @@
 
   /* ---------- cs projects ---------- */
   async function renderCS() {
-    const grid = $("#cards");
+    const wrap = $("#projects");
     const data = await loadJSON("data/cs.json");
     setHead(data);
     const projects = data.projects || [];
-    if (!projects.length) { grid.replaceWith(el("p", { class: "empty", text: "Nothing here yet." })); return; }
-    projects.forEach((p, i) => {
-      const links = [];
-      if (p.repo) links.push(el("a", { href: p.repo, target: "_blank", rel: "noopener", text: "Code" }));
-      if (p.demo) links.push(el("a", { href: p.demo, target: "_blank", rel: "noopener", text: "Demo" }));
-      if (p.writeup) links.push(el("a", { href: p.writeup, text: "Write-up" }));
-      grid.append(
-        el("article", { class: "card" }, [
-          el("span", { class: "card-num", text: `${pad(i + 1)} · ${p.year || ""}` }),
-          el("h3", { text: p.name }),
-          el("p", { text: p.description || "" }),
-          el("div", { class: "tags" }, (p.stack || []).map((t) => el("span", { class: "tag", text: t }))),
-          el("div", { class: "links" }, links),
+    if (!projects.length) { wrap.replaceWith(el("p", { class: "empty", text: "Nothing here yet." })); return; }
+    projects.forEach((p) => {
+      const yt = p.video && youtubeId(p.video);
+      const media = [];
+      if (yt) media.push(el("iframe", { class: "frame", src: `https://www.youtube-nocookie.com/embed/${yt}`, title: p.name, allow: "encrypted-media; picture-in-picture", allowfullscreen: "", loading: "lazy" }));
+      (p.docs || []).forEach((d) => {
+        media.push(el("a", { class: "doc", href: d.file, target: "_blank", rel: "noopener" }, [
+          el("div", { class: "doc-thumb" }, [d.thumb ? el("img", { src: d.thumb, alt: `${p.name} ${d.label}`, loading: "lazy" }) : null]),
+          el("span", { class: "doc-label" }, [document.createTextNode(d.label), el("span", { class: "doc-ext", text: (d.file.split(".").pop() || "").toUpperCase() })]),
+        ]));
+      });
+      wrap.append(
+        el("section", { class: "project" }, [
+          el("div", { class: "project-head" }, [
+            el("h2", { text: p.name }),
+            p.year ? el("span", { class: "mono project-year", text: p.year }) : null,
+          ]),
+          el("hr", { class: "rule rule--thin" }),
+          el("div", { class: "project-body" }, [
+            el("div", { class: "project-text" }, [
+              p.tagline ? el("p", { class: "tagline", text: p.tagline }) : null,
+              ...(p.paragraphs || []).map((t) => el("p", { text: t })),
+              (p.links || []).length ? el("div", { class: "links" }, p.links.map((l) => el("a", { href: l.url, target: "_blank", rel: "noopener", text: l.label + " →" }))) : null,
+            ]),
+            media.length ? el("div", { class: "project-media" }, media) : null,
+          ]),
         ])
       );
     });

@@ -1,9 +1,81 @@
 {
-  "_comment": "One object per project. stack = list of tags. repo/demo/writeup are optional links.",
-  "intro": "Side projects and small tools. Most were built to scratch an itch; a few are still in use.",
+  "_comment": "One object per project, rendered top to bottom in file order. paragraphs = description text; year (optional) shows beside the title; links = external links; docs = files in images/cs with a first-page thumbnail; video = a YouTube URL (optional).",
   "projects": [
-    { "name": "dwport", "year": "2026", "description": "This site. Static HTML/CSS/JS portfolio with JSON-driven galleries, a lightbox and client-side markdown. Hosted on GitHub Pages.", "stack": ["HTML", "CSS", "JavaScript"], "repo": "https://github.com/dxwu/dwport" },
-    { "name": "Kiln log", "year": "2025", "description": "A tiny CLI for recording firing schedules and glaze tests, exporting to CSV. Replace with a real project.", "stack": ["Python", "SQLite"], "repo": "https://github.com/dxwu" },
-    { "name": "Contact sheet", "year": "2024", "description": "Generates film-style contact sheets from a folder of scans, with frame numbers and stock name. Replace with a real project.", "stack": ["Go", "ImageMagick"], "repo": "https://github.com/dxwu", "demo": "https://example.com" }
+    {
+      "name": "Synesthesia",
+      "year": "",
+      "tagline": "A colorful visual display driven wirelessly by digital piano input.",
+      "paragraphs": [
+        "This project uses Google Chrome's built-in MIDI input driver as a cross-platform MIDI interface, and includes a web app that acts as the processor and light driver. The web app is written with Node.js, Express, and client-side JavaScript. Communication with the Philips Hue bulbs is done with REST calls from both the server and client.",
+        "By combining musical data and Philips Hue colored light bulbs, which can be controlled over your local wifi network, the colorful displays take on a new dimension."
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/dxwu/Synesthesia"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=cDrFB9JBSgA"
+        }
+      ],
+      "video": "https://www.youtube.com/watch?v=cDrFB9JBSgA",
+      "docs": [
+        {
+          "label": "Presentation",
+          "file": "images/cs/synesthesia-presentation.pdf",
+          "thumb": "images/cs/synesthesia-presentation-thumb.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Muon g-2",
+      "year": "",
+      "tagline": "Monte Carlo simulations for a high-energy particle storage ring.",
+      "paragraphs": [
+        "Programmed Monte Carlo simulations in C++ to optimize particle detector efficiency by 200%; proposed and optimized novel tungsten shielding to minimize particle interference.",
+        "Programmed Monte Carlo simulations in C++ to determine the optimal position of focusing magnets in a high energy particle storage ring, resulting in a 600% increase in the number of stored particles."
+      ],
+      "links": [],
+      "docs": [
+        {
+          "label": "Paper",
+          "file": "images/cs/muon-paper.pdf",
+          "thumb": "images/cs/muon-paper-thumb.jpg"
+        },
+        {
+          "label": "Poster",
+          "file": "images/cs/muon-poster.pptx",
+          "thumb": "images/cs/muon-poster-thumb.jpg"
+        }
+      ]
+    },
+    {
+      "name": "BinderFilter",
+      "year": "",
+      "tagline": "A Linux kernel message firewall for Android.",
+      "paragraphs": [
+        "BinderFilter is written as a kernel driver that implements reading, blocking, and modifying Android IPC messages. It acts as an Android equivalent of Linux Netfilter by re-injecting Android binder messages in the kernel layer.",
+        "Presented at Summercon 2016 and Shmoocon 2017."
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/dxwu/BinderFilter"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Presentation",
+          "file": "images/cs/binderfilter-presentation.pdf",
+          "thumb": "images/cs/binderfilter-presentation-thumb.jpg"
+        },
+        {
+          "label": "Report",
+          "file": "images/cs/binderfilter-report.pdf",
+          "thumb": "images/cs/binderfilter-report-thumb.jpg"
+        }
+      ]
+    }
   ]
 }
