@@ -1,0 +1,12 @@
+{
+  "_comment": "Cover image + blurb for each tile on the landing page. Keys are section slugs.",
+  "ceramics":  { "image": "images/ceramics/placeholder-01.svg",  "blurb": "Wheel-thrown stoneware, functional and otherwise." },
+  "sculpture": { "image": "images/sculpture/placeholder-01.svg", "blurb": "Clay, plaster, found things." },
+  "painting":  { "image": "images/painting/placeholder-01.svg",  "blurb": "Oil, gouache, ink, graphite." },
+  "film":      { "image": "images/film/placeholder-01.svg",      "blurb": "35mm, mostly expired stock." },
+  "writing":   { "color": "#2f5d3a", "blurb": "Essays and short fiction." },
+  "cs":        { "color": "#1f3d2b", "blurb": "Side projects and experiments." },
+  "piano":     { "color": "#8fa36b", "blurb": "Recordings, imperfect by design." },
+  "goodreads": { "color": "#c9c2a6", "blurb": "What I've been reading." },
+  "about":     { "color": "#4a4741", "blurb": "Who, where, why." }
+}

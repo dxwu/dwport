@@ -1,0 +1,9 @@
+{
+  "_comment": "One object per project. stack = list of tags. repo/demo/writeup are optional links.",
+  "intro": "Side projects and small tools. Most were built to scratch an itch; a few are still in use.",
+  "projects": [
+    { "name": "dwport", "year": "2026", "description": "This site. Static HTML/CSS/JS portfolio with JSON-driven galleries, a lightbox and client-side markdown. Hosted on GitHub Pages.", "stack": ["HTML", "CSS", "JavaScript"], "repo": "https://github.com/dxwu/dwport" },
+    { "name": "Kiln log", "year": "2025", "description": "A tiny CLI for recording firing schedules and glaze tests, exporting to CSV. Replace with a real project.", "stack": ["Python", "SQLite"], "repo": "https://github.com/dxwu" },
+    { "name": "Contact sheet", "year": "2024", "description": "Generates film-style contact sheets from a folder of scans, with frame numbers and stock name. Replace with a real project.", "stack": ["Go", "ImageMagick"], "repo": "https://github.com/dxwu", "demo": "https://example.com" }
+  ]
+}

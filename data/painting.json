@@ -1,0 +1,12 @@
+{
+  "_comment": "Add one object per piece. src = thumbnail/full image path; full (optional) = larger image for the lightbox. Sorted newest year first unless sort is 'manual'.",
+  "intro": "Oil and gouache, plus sketchbook pages in ink and graphite.",
+  "sort": "year",
+  "items": [
+    { "src": "images/painting/placeholder-01.svg", "title": "Kitchen window", "medium": "Oil on panel", "year": "2026" },
+    { "src": "images/painting/placeholder-02.svg", "title": "Self portrait", "medium": "Gouache", "year": "2025" },
+    { "src": "images/painting/placeholder-03.svg", "title": "Sketchbook, p. 14", "medium": "Ink", "year": "2025" },
+    { "src": "images/painting/placeholder-04.svg", "title": "Hills", "medium": "Oil on canvas", "year": "2024" },
+    { "src": "images/painting/placeholder-05.svg", "title": "Hands", "medium": "Graphite", "year": "2024" }
+  ]
+}

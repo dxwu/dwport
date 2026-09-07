@@ -1,0 +1,13 @@
+{
+  "_comment": "Add one object per piece. src = thumbnail/full image path; full (optional) = larger image for the lightbox. Sorted newest year first unless sort is 'manual'.",
+  "intro": "Wheel-thrown stoneware and porcelain. Most pieces are fired to cone 10 in reduction; glazes are studio ash, tenmoku and a shino I keep failing to reproduce.",
+  "sort": "year",
+  "items": [
+    { "src": "images/ceramics/placeholder-01.svg", "title": "Tea bowl", "medium": "Stoneware, ash glaze", "year": "2026", "caption": "Thrown off the hump. The rim went a little wobbly and I decided to like it." },
+    { "src": "images/ceramics/placeholder-02.svg", "title": "Lidded jar", "medium": "Stoneware, tenmoku", "year": "2026" },
+    { "src": "images/ceramics/placeholder-03.svg", "title": "Bottle", "medium": "Porcelain, shino", "year": "2025" },
+    { "src": "images/ceramics/placeholder-04.svg", "title": "Serving bowl", "medium": "Stoneware, celadon", "year": "2025" },
+    { "src": "images/ceramics/placeholder-05.svg", "title": "Cups (set of 4)", "medium": "Stoneware, ash glaze", "year": "2024" },
+    { "src": "images/ceramics/placeholder-06.svg", "title": "Vase", "medium": "Stoneware, unglazed", "year": "2024" }
+  ]
+}

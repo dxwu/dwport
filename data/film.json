@@ -1,0 +1,13 @@
+{
+  "_comment": "Add one object per piece. src = thumbnail/full image path; full (optional) = larger image for the lightbox. Sorted newest year first unless sort is 'manual'.",
+  "intro": "Shot on 35mm with a point-and-shoot. Scans are as-is; light leaks are a feature.",
+  "sort": "year",
+  "items": [
+    { "src": "images/film/placeholder-01.svg", "title": "Sunset District", "medium": "Portra 400", "year": "2026" },
+    { "src": "images/film/placeholder-02.svg", "title": "Stairwell", "medium": "HP5 Plus", "year": "2026" },
+    { "src": "images/film/placeholder-03.svg", "title": "Coast", "medium": "Gold 200", "year": "2025" },
+    { "src": "images/film/placeholder-04.svg", "title": "Diner", "medium": "Ultramax 400", "year": "2025" },
+    { "src": "images/film/placeholder-05.svg", "title": "Ferry", "medium": "Portra 400", "year": "2024" },
+    { "src": "images/film/placeholder-06.svg", "title": "Backyard", "medium": "Superia 400, expired", "year": "2024" }
+  ]
+}

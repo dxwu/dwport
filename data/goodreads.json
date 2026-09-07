@@ -1,0 +1,14 @@
+{
+  "_comment": "profile = your Goodreads URL. Each book: title, author, cover (URL or images/covers/...), link, rating 1-5, shelf ('currently-reading', 'read', 'to-read'). Export from Goodreads: My Books > Import and export > Export Library gives a CSV you can convert.",
+  "intro": "A shelf, not a review column. Ratings are how much I'd press the book on a friend.",
+  "profile": "https://www.goodreads.com/",
+  "books": [
+    { "title": "The Unknown Craftsman", "author": "Sōetsu Yanagi", "shelf": "currently-reading", "link": "https://www.goodreads.com/book/show/1017371.The_Unknown_Craftsman" },
+    { "title": "A Potter's Book", "author": "Bernard Leach", "shelf": "read", "rating": 5, "link": "https://www.goodreads.com/book/show/1104516.A_Potter_s_Book" },
+    { "title": "Ways of Seeing", "author": "John Berger", "shelf": "read", "rating": 4, "link": "https://www.goodreads.com/book/show/2784.Ways_of_Seeing" },
+    { "title": "The Shape of Time", "author": "George Kubler", "shelf": "read", "rating": 4 },
+    { "title": "Zen and the Art of Motorcycle Maintenance", "author": "Robert M. Pirsig", "shelf": "read", "rating": 3 },
+    { "title": "Art & Fear", "author": "David Bayles, Ted Orland", "shelf": "to-read" },
+    { "title": "The Craftsman", "author": "Richard Sennett", "shelf": "to-read" }
+  ]
+}

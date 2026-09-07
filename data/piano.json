@@ -1,0 +1,8 @@
+{
+  "_comment": "One object per recording. Use 'youtube' (any YouTube URL) OR 'audio' (path to mp3/m4a in images/piano or elsewhere).",
+  "intro": "Home recordings on an upright that is slightly out of tune. Wrong notes left in for honesty.",
+  "recordings": [
+    { "title": "Gymnopédie No. 1", "composer": "Erik Satie", "recorded": "2026", "youtube": "https://www.youtube.com/watch?v=S-Xm7s9eGxU", "note": "Replace this YouTube link with your own recording." },
+    { "title": "Prelude in C, BWV 846", "composer": "J. S. Bach", "recorded": "2025", "audio": "images/piano/prelude-in-c.mp3", "note": "Example of a self-hosted audio file. Drop an mp3 at this path or change the 'audio' value." }
+  ]
+}

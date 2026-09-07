@@ -1,0 +1,8 @@
+{
+  "_comment": "Each piece: slug (used in URL), title, date (YYYY-MM-DD), kind, summary, file (markdown path). Use 'external' instead of 'file' to link elsewhere.",
+  "intro": "Essays, notes and the occasional short story. Longer things first; everything is a draft.",
+  "pieces": [
+    { "slug": "on-wobbly-rims", "title": "On wobbly rims", "date": "2026-08-14", "kind": "essay", "summary": "What a slightly-off pot taught me about finishing software.", "file": "writing/on-wobbly-rims.md", "tags": ["essay", "ceramics"] },
+    { "slug": "hello", "title": "Hello, world (the website)", "date": "2026-09-06", "kind": "note", "summary": "Why this site is a folder of HTML files and how to add to it.", "file": "writing/hello.md", "tags": ["note"] }
+  ]
+}
