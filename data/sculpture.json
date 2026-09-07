@@ -1,146 +1,177 @@
 {
   "_comment": "One object per piece. src is the image path; orig is the original upload name for reference. Fill in title/medium/year as you like; they show in the lightbox. Order is manual (file order).",
+  "layout": "grid",
+  "groupTitles": false,
+  "_groups": "Items with the same group value render together, in file order. groupTitles: false hides the group headings but keeps the separation.",
   "sort": "manual",
   "items": [
-    {
-      "src": "images/sculpture/sculpture-01.jpg",
-      "title": "",
-      "medium": "",
-      "year": "",
-      "orig": "1398181613079.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-02.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2014",
-      "orig": "20140418_220034.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-03.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2014",
-      "orig": "20140424_114428.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-04.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2014",
-      "orig": "20140506_164314.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-05.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2014",
-      "orig": "20140520_025409.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-06.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2016",
-      "orig": "20160110_233508.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-07.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2016",
-      "orig": "20160111_214333.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-08.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2016",
-      "orig": "20160112_113613.jpg"
-    },
-    {
-      "src": "images/sculpture/sculpture-09.jpg",
-      "title": "",
-      "medium": "",
-      "year": "2016",
-      "orig": "20160120_100145.jpg"
-    },
     {
       "src": "images/sculpture/sculpture-10.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_133836.jpg"
+      "orig": "20160223_133836.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-11.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_153116.jpg"
+      "orig": "20160223_153116.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-12.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_155249.jpg"
+      "orig": "20160223_155249.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-13.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_155259.jpg"
+      "orig": "20160223_155259.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-14.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_155639.jpg"
+      "orig": "20160223_155639.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-15.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_161409.jpg"
+      "orig": "20160223_161409.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-16.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160223_162303.jpg"
+      "orig": "20160223_162303.jpg",
+      "group": "Spheres, 2016"
     },
     {
       "src": "images/sculpture/sculpture-17.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160303_125122.jpg"
+      "orig": "20160303_125122.jpg",
+      "group": "Wire frame, 2016"
     },
     {
       "src": "images/sculpture/sculpture-18.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160303_172704.jpg"
+      "orig": "20160303_172704.jpg",
+      "group": "Wire frame, 2016"
     },
     {
       "src": "images/sculpture/sculpture-19.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160308_105123.jpg"
+      "orig": "20160308_105123.jpg",
+      "group": "Wire frame, 2016"
     },
     {
       "src": "images/sculpture/sculpture-20.jpg",
       "title": "",
       "medium": "",
       "year": "2016",
-      "orig": "20160310_121601.jpg"
+      "orig": "20160310_121601.jpg",
+      "group": "Wire frame, 2016"
+    },
+    {
+      "src": "images/sculpture/sculpture-21.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "x.jpg",
+      "group": "pine"
+    },
+    {
+      "src": "images/sculpture/sculpture-05.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140520_025409.jpg",
+      "group": "Black panels, 2016"
+    },
+    {
+      "src": "images/sculpture/sculpture-06.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160110_233508.jpg",
+      "group": "Black panels, 2016"
+    },
+    {
+      "src": "images/sculpture/sculpture-07.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160111_214333.jpg",
+      "group": "Black panels, 2016"
+    },
+    {
+      "src": "images/sculpture/sculpture-08.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160112_113613.jpg",
+      "group": "Black panels, 2016"
+    },
+    {
+      "src": "images/sculpture/sculpture-09.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160120_100145.jpg",
+      "group": "Black panels, 2016"
+    },
+    {
+      "src": "images/sculpture/sculpture-04.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140506_164314.jpg",
+      "group": "Suspended pipes, 2014"
+    },
+    {
+      "src": "images/sculpture/sculpture-01.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "1398181613079.jpg",
+      "group": "Rods, 2014"
+    },
+    {
+      "src": "images/sculpture/sculpture-02.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140418_220034.jpg",
+      "group": "Rods, 2014"
+    },
+    {
+      "src": "images/sculpture/sculpture-03.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140424_114428.jpg",
+      "group": "Rods, 2014"
     }
   ]
 }

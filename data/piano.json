@@ -2,7 +2,9 @@
   "_comment": "One object per recording. Use 'youtube' (any YouTube URL) OR 'audio' (path to mp3/m4a in images/piano or elsewhere).",
   "intro": "Home recordings on an upright that is slightly out of tune. Wrong notes left in for honesty.",
   "recordings": [
-    { "title": "Gymnopédie No. 1", "composer": "Erik Satie", "recorded": "2026", "youtube": "https://www.youtube.com/watch?v=S-Xm7s9eGxU", "note": "Replace this YouTube link with your own recording." },
-    { "title": "Prelude in C, BWV 846", "composer": "J. S. Bach", "recorded": "2025", "audio": "images/piano/prelude-in-c.mp3", "note": "Example of a self-hosted audio file. Drop an mp3 at this path or change the 'audio' value." }
+    { "title": "Alborada Del Gracioso", "composer": "Ravel", "youtube": "https://youtu.be/XU76_38Te14"},
+    { "title": "Caprice Espangol", "composer": "Moszkowski", "youtube": "https://youtu.be/vONK6llxw5w"},
+    { "title": "Sarah Brown Eyes", "composer": "Stephen Flaherty", "youtube": "https://youtu.be/9v64s4VQddw"},
+    { "title": "Nocturne in E-flat", "composer": "Chopin", "youtube": "https://youtu.be/E1ppj3D9xPk"}
   ]
 }

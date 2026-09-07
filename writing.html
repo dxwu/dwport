@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23f4efe6'/><circle cx='8' cy='8' r='5' fill='%23b8452b'/></svg>">
 <script>window.SITE = { name: "David Wu" };</script>
 </head>
 <body data-page="writing">
@@ -20,12 +19,18 @@
   <div><h1>Writing</h1></div>
 </section>
 <hr class="rule">
-<div class="list" id="writing-list"></div>
-<article class="article" id="article" hidden></article>
+<form class="gate" id="gate" autocomplete="off">
+  <label class="mono" for="pw">Password</label>
+  <div class="gate-row">
+    <input id="pw" name="pw" type="password" required autofocus>
+    <button type="submit">Enter →</button>
+  </div>
+  <p class="gate-msg mono" id="gate-msg" aria-live="polite"></p>
+</form>
+<div class="gate-result" id="gate-result" hidden></div>
 </div>
 </main>
 <footer class="site-footer"><div class="wrap" id="site-footer"></div></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

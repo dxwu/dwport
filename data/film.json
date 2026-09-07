@@ -1,7 +1,29 @@
 {
   "_comment": "One object per piece. src is the image path; orig is the original upload name for reference. Fill in title/medium/year as you like; they show in the lightbox. Order is manual (file order).",
+  "layout": "grid",
   "sort": "manual",
   "items": [
+    {
+      "src": "images/film/film-29.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000018.jpg"
+    },
+    {
+      "src": "images/film/film-32.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000028.jpg"
+    },
+    {
+      "src": "images/film/film-52.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820027.jpg"
+    },
     {
       "src": "images/film/film-01.jpg",
       "title": "",
@@ -199,13 +221,6 @@
       "orig": "002297000016.jpg"
     },
     {
-      "src": "images/film/film-29.jpg",
-      "title": "",
-      "medium": "",
-      "year": "",
-      "orig": "002297000018.jpg"
-    },
-    {
       "src": "images/film/film-30.jpg",
       "title": "",
       "medium": "",
@@ -218,13 +233,6 @@
       "medium": "",
       "year": "",
       "orig": "002297000026 copy.jpg"
-    },
-    {
-      "src": "images/film/film-32.jpg",
-      "title": "",
-      "medium": "",
-      "year": "",
-      "orig": "002297000028.jpg"
     },
     {
       "src": "images/film/film-33.jpg",
@@ -274,13 +282,6 @@
       "medium": "",
       "year": "",
       "orig": "002624100012.jpg"
-    },
-    {
-      "src": "images/film/film-40.jpg",
-      "title": "",
-      "medium": "",
-      "year": "",
-      "orig": "002631630011.jpg"
     },
     {
       "src": "images/film/film-41.jpg",
@@ -358,13 +359,6 @@
       "medium": "",
       "year": "",
       "orig": "002765820016.jpg"
-    },
-    {
-      "src": "images/film/film-52.jpg",
-      "title": "",
-      "medium": "",
-      "year": "",
-      "orig": "002765820027.jpg"
     },
     {
       "src": "images/film/film-53.jpg",
@@ -449,6 +443,13 @@
       "medium": "",
       "year": "",
       "orig": "24685-1-36.jpeg"
+    },
+    {
+      "src": "images/film/film-40.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002631630011.jpg"
     }
   ]
 }

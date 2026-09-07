@@ -2,13 +2,13 @@
 (function () {
   const SECTIONS = [
     { slug: "ceramics",  title: "Ceramics",            kind: "gallery" },
+    { slug: "film",      title: "Film",         kind: "gallery" },
     { slug: "sculpture", title: "Sculpture",           kind: "gallery" },
     { slug: "painting",  title: "Painting & Drawing",  kind: "gallery" },
-    { slug: "film",      title: "Film Photos",         kind: "gallery" },
     { slug: "writing",   title: "Writing",             kind: "writing" },
-    { slug: "cs",        title: "CS Projects",         kind: "cs" },
+    { slug: "cs",        title: "Computation",         kind: "cs" },
     { slug: "piano",     title: "Piano",               kind: "piano" },
-    { slug: "goodreads", title: "Goodreads",           kind: "goodreads" },
+    { slug: "goodreads", title: "Books",           kind: "goodreads" },
     { slug: "about",     title: "About",               kind: "about" },
   ];
 
@@ -62,32 +62,17 @@
       footer.append(
         el("span", { text: `© ${new Date().getFullYear()} ${window.SITE?.name || ""}` }),
         el("span", { text: "The only constant is change" }),
-        el("a", { href: "https://github.com/dxwu/dwport", text: "Source" })
       );
     }
   }
 
   /* ---------- home ---------- */
   async function renderHome() {
-    const grid = $("#tiles");
-    if (!grid) return;
-    let covers = {};
-    try { covers = await loadJSON("data/home.json"); } catch (e) { /* optional */ }
-    SECTIONS.forEach((s, i) => {
-      const c = covers[s.slug] || {};
-      const img = c.image
-        ? el("div", { class: "tile-img" }, [el("img", { src: c.image, alt: c.alt || s.title, loading: "lazy" })])
-        : el("div", { class: "tile-img", style: `background:${c.color || "var(--paper-2)"}` });
-      grid.append(
-        el("a", { class: "tile", href: `${s.slug}.html` }, [
-          img,
-          el("div", { class: "tile-body" }, [
-            el("h3", { text: s.title }),
-          ]),
-          el("span", { class: "arrow", text: "→" }),
-        ])
-      );
-    });
+    const img = $("#hero-image");
+    if (!img) return;
+    const data = await loadJSON("data/home.json");
+    img.src = data.hero;
+    img.alt = data.alt || "";
   }
 
   /* ---------- gallery + lightbox ---------- */
@@ -100,15 +85,57 @@
     const items = (data.items || []).slice();
     if (data.sort !== "manual") items.sort((a, b) => String(b.year || "").localeCompare(String(a.year || "")));
     if (!items.length) { grid.replaceWith(el("p", { class: "empty", text: "Nothing here yet. Add entries to data/" + slug + ".json." })); return; }
+    const isGrid = data.layout === "grid";
+    const grouped = items.some((it) => it.group);
+    // group -> container grid. Ungrouped: a single grid.
+    const grids = new Map();
+    const gridFor = (name) => {
+      if (grids.has(name)) return grids.get(name);
+      let g = grid;
+      if (grouped) {
+        g = el("div", { class: "masonry" });
+        const titled = data.groupTitles !== false;
+        grid.append(el("section", { class: "group" }, [titled ? el("h2", { text: name }) : null, el("hr", { class: "rule rule--thin" }), g]));
+      }
+      if (isGrid) g.classList.add("masonry--grid");
+      grids.set(name, g);
+      return g;
+    };
+    if (grouped) grid.className = "groups";
     items.forEach((it, i) => {
-      const fig = el("figure", { class: "piece", tabindex: "0", role: "button", "aria-label": `Open ${it.title || "image"}` }, [
-        el("img", { src: it.src, alt: it.alt || it.title || "", loading: "lazy" }),
-      ]);
+      const target = gridFor(it.group || "");
+      const img = el("img", { src: it.src, alt: it.alt || it.title || "", loading: "lazy" });
+      const fig = el("figure", { class: "piece", tabindex: "0", role: "button", "aria-label": `Open ${it.title || "image"}` }, [img]);
+      if (isGrid) {
+        const place = () => {
+          if (img.naturalWidth > img.naturalHeight) fig.classList.add("piece--wide");
+          sizeGridItem(fig, target);
+        };
+        if (img.complete && img.naturalWidth) place(); else img.addEventListener("load", place);
+      }
       fig.addEventListener("click", () => openLightbox(items, i));
       fig.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(items, i); } });
-      grid.append(fig);
+      target.append(fig);
     });
   }
+
+  /* grid masonry: span rows to match each image's rendered height */
+  function sizeGridItem(fig, grid) {
+    const row = parseFloat(getComputedStyle(grid).gridAutoRows) || 8;
+    const gap = parseFloat(getComputedStyle(grid).rowGap) || 0;
+    const img = fig.querySelector("img");
+    if (!img.naturalWidth) return;
+    const w = fig.getBoundingClientRect().width - 2; // inside 1px borders
+    const h = w * img.naturalHeight / img.naturalWidth + 2;
+    fig.style.gridRowEnd = `span ${Math.ceil((h + gap) / (row + gap))}`;
+  }
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.querySelectorAll(".masonry--grid").forEach((g) => g.querySelectorAll(".piece").forEach((f) => sizeGridItem(f, g)));
+    }, 100);
+  });
 
   let lb, lbIdx = 0, lbItems = [];
   function ensureLightbox() {
@@ -150,42 +177,24 @@
     if ($("#meta")) $("#meta").textContent = data.meta || `${(data.items || data.pieces || data.projects || data.recordings || data.books || []).length} entries`;
   }
 
-  /* ---------- writing ---------- */
+  /* ---------- writing (password gate) ---------- */
+  const WRITING_PASSWORD = "whatismywriting?";
+  const WRITING_MESSAGE = "Nice try, you'll have to ask me in person";
   async function renderWriting() {
-    const list = $("#writing-list");
-    const article = $("#article");
-    const data = await loadJSON("data/writing.json");
-    const slug = new URLSearchParams(location.search).get("p");
-    const pieces = (data.pieces || []).slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    if (slug) {
-      const piece = pieces.find((p) => p.slug === slug);
-      list.hidden = true;
-      article.hidden = false;
-      if (!piece) { article.append(el("p", { class: "empty", text: "Piece not found." })); return; }
-      document.title = `${piece.title} — ${window.SITE?.name || ""}`;
-      const md = await (await fetch(piece.file)).text();
-      const body = window.marked ? window.marked.parse(md) : `<pre>${esc(md)}</pre>`;
-      article.append(
-        el("a", { class: "back", href: "writing.html", text: "← All writing" }),
-        el("h1", { text: piece.title }),
-        el("div", { class: "date", text: [piece.date, piece.kind].filter(Boolean).join(" · ") }),
-        el("div", { class: "body", html: body })
-      );
-      return;
-    }
-    setHead(data);
-    if (!pieces.length) { list.append(el("p", { class: "empty", text: "Nothing here yet." })); return; }
-    pieces.forEach((p) => {
-      list.append(
-        el("div", { class: "row" }, [
-          el("span", { class: "date", text: p.date || "" }),
-          el("div", {}, [
-            el("h3", {}, [el("a", { class: "title", href: p.external || `writing.html?p=${encodeURIComponent(p.slug)}`, text: p.title, ...(p.external ? { target: "_blank", rel: "noopener" } : {}) })]),
-            p.summary ? el("p", { class: "sub", text: p.summary }) : null,
-          ]),
-          el("div", { class: "tags" }, (p.tags || [p.kind]).filter(Boolean).map((t) => el("span", { class: "tag", text: t }))),
-        ])
-      );
+    const form = $("#gate");
+    if (!form) return;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const val = $("#pw", form).value;
+      if (val === WRITING_PASSWORD) {
+        form.hidden = true;
+        const out = $("#gate-result");
+        out.hidden = false;
+        out.append(el("p", { text: WRITING_MESSAGE }));
+      } else {
+        $("#gate-msg").textContent = "Wrong password.";
+        $("#pw", form).select();
+      }
     });
   }
 
@@ -239,41 +248,28 @@
     });
   }
 
-  /* ---------- goodreads ---------- */
+  /* ---------- books ---------- */
   async function renderGoodreads() {
     const shelf = $("#shelf");
-    const tabs = $("#shelf-tabs");
     const data = await loadJSON("data/goodreads.json");
     setHead(data);
     if (data.profile && $("#gr-link")) { $("#gr-link").href = data.profile; $("#gr-link").hidden = false; }
     const books = data.books || [];
-    const shelves = [...new Set(books.map((b) => b.shelf || "read"))];
-    let current = shelves[0];
-    const draw = () => {
-      shelf.innerHTML = "";
-      const list = books.filter((b) => (b.shelf || "read") === current);
-      if (!list.length) { shelf.append(el("p", { class: "empty", text: "Empty shelf." })); return; }
-      list.forEach((b) => {
-        const cover = b.cover
-          ? el("img", { src: b.cover, alt: `${b.title} cover`, loading: "lazy" })
-          : el("div", { class: "fallback", text: b.title });
-        const stars = b.rating ? "★".repeat(b.rating) + "☆".repeat(5 - b.rating) : "";
-        shelf.append(
-          el("a", { class: "book", href: b.link || "#", target: b.link ? "_blank" : null, rel: "noopener" }, [
-            el("div", { class: "cover" }, [cover]),
-            el("div", { class: "b-title", text: b.title }),
-            el("div", { class: "b-author", text: b.author || "" }),
-            stars ? el("div", { class: "b-rating", text: stars }) : null,
-          ])
-        );
-      });
-    };
-    shelves.forEach((s) => {
-      const b = el("button", { role: "tab", "aria-selected": String(s === current), text: s.replace(/-/g, " ") });
-      b.onclick = () => { current = s; [...tabs.children].forEach((c) => c.setAttribute("aria-selected", String(c === b))); draw(); };
-      tabs.append(b);
+    if (!books.length) { shelf.append(el("p", { class: "empty", text: "No books yet." })); return; }
+    books.forEach((b) => {
+      const cover = b.cover
+        ? el("img", { src: b.cover, alt: `${b.title} cover`, loading: "lazy" })
+        : el("div", { class: "fallback", text: b.title });
+      const stars = b.rating ? "★".repeat(b.rating) + "☆".repeat(5 - b.rating) : "";
+      shelf.append(
+        el("a", { class: "book", href: b.link || "#", target: b.link ? "_blank" : null, rel: "noopener", title: [b.title, b.author, b.year].filter(Boolean).join(" · ") }, [
+          el("div", { class: "cover" }, [cover]),
+          el("div", { class: "b-title", text: b.title }),
+          el("div", { class: "b-author", text: b.author || "" }),
+          stars ? el("div", { class: "b-rating", text: stars }) : null,
+        ])
+      );
     });
-    draw();
   }
 
   /* ---------- boot ---------- */
