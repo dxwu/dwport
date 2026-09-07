@@ -1,13 +1,454 @@
 {
-  "_comment": "Add one object per piece. src = thumbnail/full image path; full (optional) = larger image for the lightbox. Sorted newest year first unless sort is 'manual'.",
-  "intro": "Shot on 35mm with a point-and-shoot. Scans are as-is; light leaks are a feature.",
-  "sort": "year",
+  "_comment": "One object per piece. src is the image path; orig is the original upload name for reference. Fill in title/medium/year as you like; they show in the lightbox. Order is manual (file order).",
+  "sort": "manual",
   "items": [
-    { "src": "images/film/placeholder-01.svg", "title": "Sunset District", "medium": "Portra 400", "year": "2026" },
-    { "src": "images/film/placeholder-02.svg", "title": "Stairwell", "medium": "HP5 Plus", "year": "2026" },
-    { "src": "images/film/placeholder-03.svg", "title": "Coast", "medium": "Gold 200", "year": "2025" },
-    { "src": "images/film/placeholder-04.svg", "title": "Diner", "medium": "Ultramax 400", "year": "2025" },
-    { "src": "images/film/placeholder-05.svg", "title": "Ferry", "medium": "Portra 400", "year": "2024" },
-    { "src": "images/film/placeholder-06.svg", "title": "Backyard", "medium": "Superia 400, expired", "year": "2024" }
+    {
+      "src": "images/film/film-01.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-011-4.jpg"
+    },
+    {
+      "src": "images/film/film-02.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-023-10.jpg"
+    },
+    {
+      "src": "images/film/film-03.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-025-11.jpg"
+    },
+    {
+      "src": "images/film/film-04.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-029-13.jpg"
+    },
+    {
+      "src": "images/film/film-05.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-031-14.jpg"
+    },
+    {
+      "src": "images/film/film-06.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-057-27.jpg"
+    },
+    {
+      "src": "images/film/film-07.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-063-30.jpg"
+    },
+    {
+      "src": "images/film/film-08.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000351_0000351-R6-071-34.jpg"
+    },
+    {
+      "src": "images/film/film-09.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000780_0000780-R1-007-2.jpg"
+    },
+    {
+      "src": "images/film/film-10.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000780_0000780-R1-013-5 copy.jpg"
+    },
+    {
+      "src": "images/film/film-11.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000780_0000780-R1-015-6.jpg"
+    },
+    {
+      "src": "images/film/film-12.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "0000780_0000780-R1-036-16A.jpg"
+    },
+    {
+      "src": "images/film/film-13.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "000219340017.jpg"
+    },
+    {
+      "src": "images/film/film-14.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "000219340021.jpg"
+    },
+    {
+      "src": "images/film/film-15.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "000219340030.jpg"
+    },
+    {
+      "src": "images/film/film-16.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "000219340035.jpg"
+    },
+    {
+      "src": "images/film/film-17.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "000219340036.jpg"
+    },
+    {
+      "src": "images/film/film-18.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002181780010.jpg"
+    },
+    {
+      "src": "images/film/film-19.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002181780011.jpg"
+    },
+    {
+      "src": "images/film/film-20.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002181780021.jpg"
+    },
+    {
+      "src": "images/film/film-21.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002181780024.jpg"
+    },
+    {
+      "src": "images/film/film-22.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002181780028.jpg"
+    },
+    {
+      "src": "images/film/film-23.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002181780030.jpg"
+    },
+    {
+      "src": "images/film/film-24.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000005.jpg"
+    },
+    {
+      "src": "images/film/film-25.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000006 copy.jpg"
+    },
+    {
+      "src": "images/film/film-26.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000010.jpg"
+    },
+    {
+      "src": "images/film/film-27.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000012.jpg"
+    },
+    {
+      "src": "images/film/film-28.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000016.jpg"
+    },
+    {
+      "src": "images/film/film-29.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000018.jpg"
+    },
+    {
+      "src": "images/film/film-30.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000019.jpg"
+    },
+    {
+      "src": "images/film/film-31.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000026 copy.jpg"
+    },
+    {
+      "src": "images/film/film-32.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000028.jpg"
+    },
+    {
+      "src": "images/film/film-33.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000030.jpg"
+    },
+    {
+      "src": "images/film/film-34.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000031.jpg"
+    },
+    {
+      "src": "images/film/film-35.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002297000032.jpg"
+    },
+    {
+      "src": "images/film/film-36.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002600300004.jpg"
+    },
+    {
+      "src": "images/film/film-37.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002600300005.jpg"
+    },
+    {
+      "src": "images/film/film-38.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002600300031.jpg"
+    },
+    {
+      "src": "images/film/film-39.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002624100012.jpg"
+    },
+    {
+      "src": "images/film/film-40.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002631630011.jpg"
+    },
+    {
+      "src": "images/film/film-41.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002631630013.jpg"
+    },
+    {
+      "src": "images/film/film-42.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002631630021.jpg"
+    },
+    {
+      "src": "images/film/film-43.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002631630022.jpg"
+    },
+    {
+      "src": "images/film/film-44.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002631630025.jpg"
+    },
+    {
+      "src": "images/film/film-45.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002701250005.jpg"
+    },
+    {
+      "src": "images/film/film-46.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002701250012.jpg"
+    },
+    {
+      "src": "images/film/film-47.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002701250019.jpg"
+    },
+    {
+      "src": "images/film/film-48.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002701250026.jpg"
+    },
+    {
+      "src": "images/film/film-49.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002701250035.jpg"
+    },
+    {
+      "src": "images/film/film-50.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820003.jpg"
+    },
+    {
+      "src": "images/film/film-51.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820016.jpg"
+    },
+    {
+      "src": "images/film/film-52.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820027.jpg"
+    },
+    {
+      "src": "images/film/film-53.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820028.jpg"
+    },
+    {
+      "src": "images/film/film-54.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820031.jpg"
+    },
+    {
+      "src": "images/film/film-55.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002765820036.jpg"
+    },
+    {
+      "src": "images/film/film-56.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002897410003.jpg"
+    },
+    {
+      "src": "images/film/film-57.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002897410006.jpg"
+    },
+    {
+      "src": "images/film/film-58.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002897410010.jpg"
+    },
+    {
+      "src": "images/film/film-59.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002897410016.jpg"
+    },
+    {
+      "src": "images/film/film-60.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002897410024.jpg"
+    },
+    {
+      "src": "images/film/film-61.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "002897410033.jpg"
+    },
+    {
+      "src": "images/film/film-62.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "24685-1-30.jpeg"
+    },
+    {
+      "src": "images/film/film-63.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "24685-1-33.jpeg"
+    },
+    {
+      "src": "images/film/film-64.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "24685-1-36.jpeg"
+    }
   ]
 }

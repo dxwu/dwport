@@ -1,13 +1,776 @@
 {
-  "_comment": "Add one object per piece. src = thumbnail/full image path; full (optional) = larger image for the lightbox. Sorted newest year first unless sort is 'manual'.",
-  "intro": "Wheel-thrown stoneware and porcelain. Most pieces are fired to cone 10 in reduction; glazes are studio ash, tenmoku and a shino I keep failing to reproduce.",
-  "sort": "year",
+  "_comment": "One object per piece. src is the image path; orig is the original upload name for reference. Fill in title/medium/year as you like; they show in the lightbox. Order is manual (file order).",
+  "sort": "manual",
   "items": [
-    { "src": "images/ceramics/placeholder-01.svg", "title": "Tea bowl", "medium": "Stoneware, ash glaze", "year": "2026", "caption": "Thrown off the hump. The rim went a little wobbly and I decided to like it." },
-    { "src": "images/ceramics/placeholder-02.svg", "title": "Lidded jar", "medium": "Stoneware, tenmoku", "year": "2026" },
-    { "src": "images/ceramics/placeholder-03.svg", "title": "Bottle", "medium": "Porcelain, shino", "year": "2025" },
-    { "src": "images/ceramics/placeholder-04.svg", "title": "Serving bowl", "medium": "Stoneware, celadon", "year": "2025" },
-    { "src": "images/ceramics/placeholder-05.svg", "title": "Cups (set of 4)", "medium": "Stoneware, ash glaze", "year": "2024" },
-    { "src": "images/ceramics/placeholder-06.svg", "title": "Vase", "medium": "Stoneware, unglazed", "year": "2024" }
+    {
+      "src": "images/ceramics/ceramics-01.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17843643878742813.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-02.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17846864823180458.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-03.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17852192997243921.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-04.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17859955878234563.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-05.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17862131805124460.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-06.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17862771990209899.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-07.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17866672140192270.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-08.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17868936171095420.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-09.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17869048677118827.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-10.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17872181088555088.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-11.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17876666648537011.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-12.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17879033081999732.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-13.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17884057340566514.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-14.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17887235889005310.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-15.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17892357066580700.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-16.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17895844368040666.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-17.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17901692388469972.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-18.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17905976112444112.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-19.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17916206519863962.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-20.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17916405734239255.webp"
+    },
+    {
+      "src": "images/ceramics/ceramics-21.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17917723256814605.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-22.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17918999339939297.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-23.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17922952316034151.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-24.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17923326794868573.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-25.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17926215640987863.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-26.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17928627560520140.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-27.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17934573170739035.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-28.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17941727923767614.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-29.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17948975177817648.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-30.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17966764331786665.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-31.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17974275628711596.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-32.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17976132878657774.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-33.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17985719999628157.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-34.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17988886628413383.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-35.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17989576376830869.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-36.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17995712429321673.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-37.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17999268527574439.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-38.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "17999453814023158.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-39.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18002567666463586.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-40.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18002906561317700.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-41.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18005369795761306.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-42.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18016365191557831.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-43.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18018485675205585.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-44.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18021594836586113.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-45.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18024537559838072.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-46.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18026719703078787.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-47.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18032069500952080.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-48.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18033351538980541.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-49.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18034160053809446.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-50.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18038036047966756.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-51.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18038318224964316.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-52.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18042920728657643.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-53.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18049711561650113.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-54.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18052870897778625.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-55.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18055809605537619.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-56.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18056395489806578.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-57.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18062122435532643.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-58.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18062457332242935.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-59.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18065599690557534.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-60.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18066343472275976.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-61.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18070528220020818.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-62.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18081002491455152.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-63.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18084059701448881.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-64.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18085984109535980.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-65.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18091465981643414.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-66.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18096280462433498.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-67.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18120293962834409.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-68.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18140067787274212.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-69.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18165767149172495.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-70.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18222727852277696.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-71.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18242217232141212.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-72.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18244573327113175.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-73.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18314005459177973.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-74.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18317622943196832.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-75.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18376053904132769.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-76.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18425962423044687.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-77.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18426372274068399.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-78.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18427018264019455.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-79.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18432992419048381.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-80.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18433419685045573.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-81.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18433755235066850.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-82.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "18471794854076530.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-83.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2013",
+      "orig": "20131120_210443.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-84.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140308_114226.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-85.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140308_182432.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-86.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140308_182802.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-87.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140531_172004.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-88.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140531_172255.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-89.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140531_172536.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-90.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140531_173600.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-91.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2017",
+      "orig": "25311280_10214985798581915_8808317152654373845_o_10214985798581915.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-92.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2017",
+      "orig": "25438962_10214985795221831_3802422690263711944_o_10214985795221831.jpg"
+    },
+    {
+      "src": "images/ceramics/ceramics-93.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC01232.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-94.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC01233.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-95.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC01234.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-96.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC01244.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-97.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC01268.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-98.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4215.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-99.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4218.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-100.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4219.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-101.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4222.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-102.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4225.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-103.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4227.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-104.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4228.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-105.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4230.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-106.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4232.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-107.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSCF4238.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-108.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC_0221.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-109.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC_0229.JPG"
+    },
+    {
+      "src": "images/ceramics/ceramics-110.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "DSC_0250 copy.JPG"
+    }
   ]
 }

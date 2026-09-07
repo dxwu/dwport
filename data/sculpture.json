@@ -1,11 +1,146 @@
 {
-  "_comment": "Add one object per piece. src = thumbnail/full image path; full (optional) = larger image for the lightbox. Sorted newest year first unless sort is 'manual'.",
-  "intro": "Small-scale work in clay, plaster and whatever was lying around.",
-  "sort": "year",
+  "_comment": "One object per piece. src is the image path; orig is the original upload name for reference. Fill in title/medium/year as you like; they show in the lightbox. Order is manual (file order).",
+  "sort": "manual",
   "items": [
-    { "src": "images/sculpture/placeholder-01.svg", "title": "Figure I", "medium": "Fired clay", "year": "2026" },
-    { "src": "images/sculpture/placeholder-02.svg", "title": "Stack", "medium": "Plaster, steel rod", "year": "2025" },
-    { "src": "images/sculpture/placeholder-03.svg", "title": "Head study", "medium": "Terracotta", "year": "2025" },
-    { "src": "images/sculpture/placeholder-04.svg", "title": "Untitled", "medium": "Found wood, wax", "year": "2024" }
+    {
+      "src": "images/sculpture/sculpture-01.jpg",
+      "title": "",
+      "medium": "",
+      "year": "",
+      "orig": "1398181613079.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-02.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140418_220034.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-03.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140424_114428.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-04.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140506_164314.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-05.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2014",
+      "orig": "20140520_025409.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-06.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160110_233508.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-07.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160111_214333.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-08.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160112_113613.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-09.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160120_100145.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-10.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_133836.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-11.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_153116.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-12.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_155249.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-13.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_155259.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-14.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_155639.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-15.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_161409.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-16.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160223_162303.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-17.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160303_125122.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-18.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160303_172704.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-19.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160308_105123.jpg"
+    },
+    {
+      "src": "images/sculpture/sculpture-20.jpg",
+      "title": "",
+      "medium": "",
+      "year": "2016",
+      "orig": "20160310_121601.jpg"
+    }
   ]
 }
