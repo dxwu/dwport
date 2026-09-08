@@ -106,6 +106,9 @@
       const target = gridFor(it.group || "");
       const img = el("img", { src: it.src, alt: it.alt || it.title || "", loading: "lazy" });
       const fig = el("figure", { class: "piece", tabindex: "0", role: "button", "aria-label": `Open ${it.title || "image"}` }, [img]);
+      fig.addEventListener("click", () => openLightbox(items, i));
+      fig.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(items, i); } });
+      target.append(fig); // attach before measuring: cached images are "complete" immediately
       if (isGrid) {
         const place = () => {
           if (img.naturalWidth > img.naturalHeight) fig.classList.add("piece--wide");
@@ -113,9 +116,6 @@
         };
         if (img.complete && img.naturalWidth) place(); else img.addEventListener("load", place);
       }
-      fig.addEventListener("click", () => openLightbox(items, i));
-      fig.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(items, i); } });
-      target.append(fig);
     });
   }
 
@@ -126,6 +126,7 @@
     const img = fig.querySelector("img");
     if (!img.naturalWidth) return;
     const w = fig.getBoundingClientRect().width - 2; // inside 1px borders
+    if (w <= 0) { requestAnimationFrame(() => sizeGridItem(fig, grid)); return; } // not laid out yet
     const h = w * img.naturalHeight / img.naturalWidth + 2;
     fig.style.gridRowEnd = `span ${Math.ceil((h + gap) / (row + gap))}`;
   }

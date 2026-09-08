@@ -48,4 +48,6 @@ Then open http://localhost:8000.
 2. GitHub repo → Settings → Pages → Source: "Deploy from a branch", branch `master`, folder `/ (root)`.
 3. Site appears at `https://dxwu.github.io/dwport/`.
 
+Custom domain: `CNAME` holds `davidxwu.com`. Namecheap has four A records for `@` pointing at GitHub's IPs (185.199.108–111.153) and a `www` CNAME to `dxwu.github.io`. In the repo's Pages settings, keep "Enforce HTTPS" on; GitHub issues the certificate a few minutes to an hour after DNS resolves.
+
 `.nojekyll` is present so GitHub serves files as-is.
