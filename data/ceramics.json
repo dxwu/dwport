@@ -1,5 +1,6 @@
 {
   "_comment": "One object per piece. src is the image path; orig is the original upload name for reference. Fill in title/medium/year as you like; they show in the lightbox. Order is manual (file order).",
+  "layout": "grid",
   "sort": "manual",
   "items": [
     {
@@ -247,7 +248,6 @@
       "year": "",
       "orig": "17995712429321673.jpg"
     },
-
     {
       "src": "images/ceramics/ceramics-38.jpg",
       "title": "",
